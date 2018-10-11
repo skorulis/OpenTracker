@@ -1,0 +1,16 @@
+PODS:
+  - SKSwiftLib (1.0.0)
+
+DEPENDENCIES:
+  - SKSwiftLib (from `~/dev/ios/libs/SKSwiftLib`)
+
+EXTERNAL SOURCES:
+  SKSwiftLib:
+    :path: "~/dev/ios/libs/SKSwiftLib"
+
+SPEC CHECKSUMS:
+  SKSwiftLib: f986f6eaac1d30faccc50509ec83d7358f4567e0
+
+PODFILE CHECKSUM: fd55283204db40bc294e2df14b217898bd4375d5
+
+COCOAPODS: 1.5.3
