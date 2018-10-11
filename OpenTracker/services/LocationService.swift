@@ -86,7 +86,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         let text = String(format: "did visit %@", visit)
         if (visit.arrivalDate != Date.distantPast && visit.departureDate != Date.distantFuture) {
             let loc = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
-            history.saveLoc(loc: loc,true)
+            history.saveLoc(loc: loc,isVisit: true)
         }
         logObservers.notify(parameters: text)
     }
@@ -128,7 +128,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
             shouldSave = change >= location.horizontalAccuracy
         }
         if(shouldSave) {
-            history.saveLoc(loc: location,false)
+            history.saveLoc(loc: location,isVisit: false)
         } else {
             history.updateLoc()
         }

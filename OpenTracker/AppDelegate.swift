@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreData
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let main = ViewController()
+        let main = HistoryViewController()
         window?.rootViewController = main;
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()

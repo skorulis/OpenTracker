@@ -10,8 +10,6 @@ import CoreData
 
 class DatabaseService: NSObject {
     
-    static let instance = DatabaseService()
-    
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "OpenTracker")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in

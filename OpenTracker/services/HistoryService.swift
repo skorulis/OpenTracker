@@ -2,17 +2,18 @@
 //  Copyright © 2016 Alexander Skorulis. All rights reserved.
 
 import CoreLocation
+import CoreData
 
-class HistoryService: NSObject {
+class HistoryService {
 
     private let db:DatabaseService
     var latestLoc:TrackLoc?
 
-    override init() {
-        self.db = DatabaseService.instance
+    init(db:DatabaseService) {
+        self.db = db
     }
     
-    func saveLoc(loc:CLLocation,_ isVisit:Bool) {
+    func saveLoc(loc:CLLocation, isVisit:Bool) {
         print("add location")
         let ctx = db.mainContext.childContext()
         ctx.perform {
@@ -36,6 +37,12 @@ class HistoryService: NSObject {
 
         self.latestLoc?.lastTime = NSDate()
         db.mainContext.saveRecursively(completion: nil)
+    }
+    
+    func getHistory() -> NSFetchRequest<TrackLoc> {
+        let fetch:NSFetchRequest<TrackLoc> = TrackLoc.fetchRequest()
+        fetch.sortDescriptors = [NSSortDescriptor(key: "firstTime", ascending: false)]
+        return fetch
     }
     
     /*func getHistory(from:Int64,to:Int64) -> [LocDBO] {

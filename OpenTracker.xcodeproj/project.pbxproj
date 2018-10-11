@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		AD07C940EE61F38E50E2DE76 /* Pods_OpenTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679E03645887D57084B8170 /* Pods_OpenTracker.framework */; };
 		F4C3EDEFB050641C392168D9 /* Pods_OpenTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89E5471B59E3BB7DD8EEFE /* Pods_OpenTrackerTests.framework */; };
+		FA1BC8F6216F1FC2000D7728 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BC8F5216F1FC2000D7728 /* ServiceLocator.swift */; };
+		FA1BC8F9216F20ED000D7728 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BC8F7216F20ED000D7728 /* HistoryViewController.swift */; };
+		FA1BC8FA216F20ED000D7728 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1BC8F8216F20ED000D7728 /* HistoryViewController.xib */; };
+		FA1BC8FD216F210C000D7728 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BC8FB216F210C000D7728 /* HistoryCell.swift */; };
+		FA1BC8FE216F210C000D7728 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1BC8FC216F210C000D7728 /* HistoryCell.xib */; };
 		FA49279C216E99F70071AA0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49279B216E99F70071AA0E /* AppDelegate.swift */; };
 		FA49279E216E99F70071AA0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49279D216E99F70071AA0E /* ViewController.swift */; };
 		FA4927A4216E99F70071AA0E /* OpenTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4927A2216E99F70071AA0E /* OpenTracker.xcdatamodeld */; };
@@ -20,6 +25,7 @@
 		FA77AD58216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD56216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift */; };
 		FA77AD5A216E9E8A00515C3D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD59216E9E8A00515C3D /* LocationService.swift */; };
 		FA77AD5D216E9ECC00515C3D /* ValueCycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD5C216E9ECC00515C3D /* ValueCycler.swift */; };
+		FA78D431216FE917006B43F8 /* FetchResultsChangeBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78D430216FE917006B43F8 /* FetchResultsChangeBehaviour.swift */; };
 		FA7AB281216EA83400E58ED0 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB280216EA83400E58ED0 /* HistoryService.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,11 @@
 		863F6B669A207F51C2E20219 /* Pods-OpenTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTracker/Pods-OpenTracker.release.xcconfig"; sourceTree = "<group>"; };
 		8679E03645887D57084B8170 /* Pods_OpenTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89E5471B59E3BB7DD8EEFE /* Pods_OpenTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1BC8F5216F1FC2000D7728 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		FA1BC8F7216F20ED000D7728 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		FA1BC8F8216F20ED000D7728 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		FA1BC8FB216F210C000D7728 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		FA1BC8FC216F210C000D7728 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		FA492798216E99F70071AA0E /* OpenTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA49279B216E99F70071AA0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA49279D216E99F70071AA0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 		FA77AD56216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackLoc+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FA77AD59216E9E8A00515C3D /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		FA77AD5C216E9ECC00515C3D /* ValueCycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCycler.swift; sourceTree = "<group>"; };
+		FA78D430216FE917006B43F8 /* FetchResultsChangeBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResultsChangeBehaviour.swift; sourceTree = "<group>"; };
 		FA7AB280216EA83400E58ED0 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +133,7 @@
 		FA49279A216E99F70071AA0E /* OpenTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FA78D42F216FE8F1006B43F8 /* behaviour */,
 				FA77AD5B216E9ECC00515C3D /* util */,
 				FA77AD50216E9BEB00515C3D /* models */,
 				FA77AD51216E9BEB00515C3D /* services */,
@@ -147,6 +160,10 @@
 		FA77AD4F216E9BEB00515C3D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA1BC8F7216F20ED000D7728 /* HistoryViewController.swift */,
+				FA1BC8F8216F20ED000D7728 /* HistoryViewController.xib */,
+				FA1BC8FB216F210C000D7728 /* HistoryCell.swift */,
+				FA1BC8FC216F210C000D7728 /* HistoryCell.xib */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -165,6 +182,7 @@
 				FA7AB280216EA83400E58ED0 /* HistoryService.swift */,
 				FA77AD59216E9E8A00515C3D /* LocationService.swift */,
 				FA77AD52216E9BF300515C3D /* DatabaseService.swift */,
+				FA1BC8F5216F1FC2000D7728 /* ServiceLocator.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -184,6 +202,14 @@
 				FA77AD5C216E9ECC00515C3D /* ValueCycler.swift */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		FA78D42F216FE8F1006B43F8 /* behaviour */ = {
+			isa = PBXGroup;
+			children = (
+				FA78D430216FE917006B43F8 /* FetchResultsChangeBehaviour.swift */,
+			);
+			path = behaviour;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +298,8 @@
 			files = (
 				FA4927A9216E99F70071AA0E /* LaunchScreen.storyboard in Resources */,
 				FA4927A6216E99F70071AA0E /* Assets.xcassets in Resources */,
+				FA1BC8FE216F210C000D7728 /* HistoryCell.xib in Resources */,
+				FA1BC8FA216F20ED000D7728 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,12 +386,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA78D431216FE917006B43F8 /* FetchResultsChangeBehaviour.swift in Sources */,
 				FA77AD5A216E9E8A00515C3D /* LocationService.swift in Sources */,
 				FA7AB281216EA83400E58ED0 /* HistoryService.swift in Sources */,
 				FA77AD58216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift in Sources */,
 				FA4927A4216E99F70071AA0E /* OpenTracker.xcdatamodeld in Sources */,
 				FA77AD5D216E9ECC00515C3D /* ValueCycler.swift in Sources */,
+				FA1BC8F9216F20ED000D7728 /* HistoryViewController.swift in Sources */,
+				FA1BC8FD216F210C000D7728 /* HistoryCell.swift in Sources */,
 				FA77AD57216E9D4F00515C3D /* TrackLoc+CoreDataClass.swift in Sources */,
+				FA1BC8F6216F1FC2000D7728 /* ServiceLocator.swift in Sources */,
 				FA49279E216E99F70071AA0E /* ViewController.swift in Sources */,
 				FA77AD53216E9BF300515C3D /* DatabaseService.swift in Sources */,
 				FA49279C216E99F70071AA0E /* AppDelegate.swift in Sources */,
