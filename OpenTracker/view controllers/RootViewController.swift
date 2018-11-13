@@ -21,7 +21,7 @@ class RootViewController: UIViewController {
         home.title = "Home"
         history.title = "History"
         
-        tabController.viewControllers = [home,history]
+        tabController.viewControllers = [home,history].map { UINavigationController(rootViewController: $0)}
         
         tabController.view.frame = self.view.bounds
         tabController.view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth,UIView.AutoresizingMask.flexibleHeight]

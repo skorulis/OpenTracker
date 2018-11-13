@@ -9,7 +9,7 @@
 
 import Foundation
 import CoreData
-
+import MapKit
 
 extension TrackLoc {
 
@@ -22,5 +22,9 @@ extension TrackLoc {
     @NSManaged public var lat: Double
     @NSManaged public var lng: Double
     @NSManaged public var visit: Bool
+    
+    func coord() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: lat, longitude:lng)
+    }
 
 }

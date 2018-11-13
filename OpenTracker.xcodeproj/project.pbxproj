@@ -20,6 +20,8 @@
 		FA4927A6216E99F70071AA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4927A5216E99F70071AA0E /* Assets.xcassets */; };
 		FA4927A9216E99F70071AA0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4927A7216E99F70071AA0E /* LaunchScreen.storyboard */; };
 		FA4927B4216E99F80071AA0E /* OpenTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4927B3216E99F80071AA0E /* OpenTrackerTests.swift */; };
+		FA4BE44E219AA35200D5574E /* SinglePointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BE44C219AA35200D5574E /* SinglePointViewController.swift */; };
+		FA4BE44F219AA35200D5574E /* SinglePointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4BE44D219AA35200D5574E /* SinglePointViewController.xib */; };
 		FA77AD53216E9BF300515C3D /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD52216E9BF300515C3D /* DatabaseService.swift */; };
 		FA77AD57216E9D4F00515C3D /* TrackLoc+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD55216E9D4F00515C3D /* TrackLoc+CoreDataClass.swift */; };
 		FA77AD58216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77AD56216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift */; };
@@ -64,6 +66,8 @@
 		FA4927AF216E99F80071AA0E /* OpenTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4927B3216E99F80071AA0E /* OpenTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTrackerTests.swift; sourceTree = "<group>"; };
 		FA4927B5216E99F80071AA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4BE44C219AA35200D5574E /* SinglePointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePointViewController.swift; sourceTree = "<group>"; };
+		FA4BE44D219AA35200D5574E /* SinglePointViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePointViewController.xib; sourceTree = "<group>"; };
 		FA77AD52216E9BF300515C3D /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		FA77AD55216E9D4F00515C3D /* TrackLoc+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackLoc+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FA77AD56216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackLoc+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -163,9 +167,19 @@
 			path = OpenTrackerTests;
 			sourceTree = "<group>";
 		};
+		FA4BE44B219AA30200D5574E /* map */ = {
+			isa = PBXGroup;
+			children = (
+				FA4BE44C219AA35200D5574E /* SinglePointViewController.swift */,
+				FA4BE44D219AA35200D5574E /* SinglePointViewController.xib */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
 		FA77AD4F216E9BEB00515C3D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4BE44B219AA30200D5574E /* map */,
 				FA1BC8F7216F20ED000D7728 /* HistoryViewController.swift */,
 				FA1BC8F8216F20ED000D7728 /* HistoryViewController.xib */,
 				FA1BC8FB216F210C000D7728 /* HistoryCell.swift */,
@@ -310,6 +324,7 @@
 				FA78D435216FEC15006B43F8 /* HomeViewController.xib in Resources */,
 				FA1BC8FE216F210C000D7728 /* HistoryCell.xib in Resources */,
 				FA1BC8FA216F20ED000D7728 /* HistoryViewController.xib in Resources */,
+				FA4BE44F219AA35200D5574E /* SinglePointViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +416,7 @@
 				FA7AB281216EA83400E58ED0 /* HistoryService.swift in Sources */,
 				FA77AD58216E9D4F00515C3D /* TrackLoc+CoreDataProperties.swift in Sources */,
 				FA4927A4216E99F70071AA0E /* OpenTracker.xcdatamodeld in Sources */,
+				FA4BE44E219AA35200D5574E /* SinglePointViewController.swift in Sources */,
 				FA78D437216FEC73006B43F8 /* RootViewController.swift in Sources */,
 				FA78D434216FEC15006B43F8 /* HomeViewController.swift in Sources */,
 				FA77AD5D216E9ECC00515C3D /* ValueCycler.swift in Sources */,

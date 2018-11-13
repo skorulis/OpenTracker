@@ -67,4 +67,12 @@ class HistoryViewController: UITableViewController, NSFetchedResultsControllerDe
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let point = self.fetchedResultsController?.object(at: indexPath) else { return }
+        
+        let vc = SinglePointViewController()
+        vc.point = point
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
