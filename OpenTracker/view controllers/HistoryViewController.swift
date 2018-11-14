@@ -15,15 +15,17 @@ class HistoryViewController: UITableViewController, NSFetchedResultsControllerDe
     private let services = ServiceLocator.instance
     private var reloadBehaviour:FetchResultsChangeBehaviour<TrackLoc>?
     
+    private var fetchRequest:NSFetchRequest<TrackLoc>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.register(UINib(nibName: "HistoryCell", bundle: nil), forCellReuseIdentifier: "HistoryCell")
         
-        let request = services.history.getHistory()
+        self.fetchRequest = services.history.getHistory()
         let ctx = services.db.mainContext
         
-        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: ctx, sectionNameKeyPath: nil, cacheName: nil)
+        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: self.fetchRequest, managedObjectContext: ctx, sectionNameKeyPath: nil, cacheName: nil)
         
         reloadBehaviour = FetchResultsChangeBehaviour(tableView: self.tableView, fetchController: self.fetchedResultsController!)
         try! self.fetchedResultsController?.performFetch()

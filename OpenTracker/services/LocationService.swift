@@ -17,13 +17,14 @@ enum LocationMode: String {
 
 class LocationService: NSObject, CLLocationManagerDelegate {
 
-    
-    let accuracy = ValueCycler(values:[kCLLocationAccuracyNearestTenMeters,kCLLocationAccuracyHundredMeters,kCLLocationAccuracyKilometer,kCLLocationAccuracyThreeKilometers],names:["Ten meters","Hundred meters","Kilometer","Three kilometers"])
     private let history:HistoryService
-    let logObservers = ObserverSet<String>();
-    let locationUpdateObservers = ObserverSet<CLLocation>()
     private let locationManager:CLLocationManager
     private var hasFence:Bool = false
+    
+    let accuracy = ValueCycler(values:[kCLLocationAccuracyNearestTenMeters,kCLLocationAccuracyHundredMeters,kCLLocationAccuracyKilometer,kCLLocationAccuracyThreeKilometers],names:["Ten meters","Hundred meters","Kilometer","Three kilometers"])
+    
+    let logObservers = ObserverSet<String>();
+    let locationUpdateObservers = ObserverSet<CLLocation>()
     var lastUpdate:CLLocation = CLLocation(latitude: 0, longitude: 0)
     
     var isActive:Bool {

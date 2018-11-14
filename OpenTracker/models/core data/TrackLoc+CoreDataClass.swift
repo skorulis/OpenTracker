@@ -9,8 +9,13 @@
 
 import Foundation
 import CoreData
+import MapKit
 
 @objc(TrackLoc)
 public class TrackLoc: NSManagedObject {
 
+    func coord() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: lat, longitude:lng)
+    }
+    
 }
