@@ -45,5 +45,19 @@
     <string>We need to know where you are to keep track</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>We need to know where you are to keep track</string>
+    <key>Fabric</key>
+    <dict>
+        <key>APIKey</key>
+        <string>be5abb8584369ef6a2dec6e43fa4fecd33eed5dd</string>
+        <key>Kits</key>
+        <array>
+            <dict>
+                <key>KitInfo</key>
+                <dict/>
+                <key>KitName</key>
+                <string>Crashlytics</string>
+            </dict>
+        </array>
+    </dict>
 </dict>
 </plist>

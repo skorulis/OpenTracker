@@ -1,4 +1,7 @@
 PODS:
+  - Crashlytics (3.10.7):
+    - Fabric (~> 1.7.11)
+  - Fabric (1.7.11)
   - PromiseKit (6.4.0):
     - PromiseKit/CorePromise (= 6.4.0)
     - PromiseKit/Foundation (= 6.4.0)
@@ -11,11 +14,15 @@ PODS:
   - SKSwiftLib (1.0.0)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - PromiseKit
   - SKSwiftLib (from `~/dev/ios/libs/SKSwiftLib`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
     - PromiseKit
 
 EXTERNAL SOURCES:
@@ -23,9 +30,11 @@ EXTERNAL SOURCES:
     :path: "~/dev/ios/libs/SKSwiftLib"
 
 SPEC CHECKSUMS:
+  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
   PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
   SKSwiftLib: f986f6eaac1d30faccc50509ec83d7358f4567e0
 
-PODFILE CHECKSUM: 6d5960af85cf89779d869b06ae4ef45aab2ab27d
+PODFILE CHECKSUM: 0df38eb89c6073ba338ef05c9b2b9da8846bd9ca
 
 COCOAPODS: 1.5.3

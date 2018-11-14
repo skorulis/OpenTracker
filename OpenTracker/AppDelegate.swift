@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle")?.load()
         #endif
         
+        Fabric.with([Crashlytics.self])
         return true
     }
 
